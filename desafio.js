@@ -2,7 +2,7 @@ alert(
   "Bienvenido a la calculadora de promedio. Ingrese su materia o ingrese ESC si desea salir del programa."
 );
 let materia = prompt("Ingrese la materia:");
-while (materia !== "ESC") {
+while (materia != "ESC" && materia != "Esc" && materia != "esc") {
   let nota1 = prompt("Ingrese la primer nota de la materia:");
   let nota2 = prompt("Ingrese la segunda nota de la materia:");
   let nota3 = prompt("Ingrese la tercer nota de la materia:");
@@ -28,6 +28,6 @@ while (materia !== "ESC") {
   }
   materia = prompt("Ingrese otra materia:");
 }
-if (materia == "ESC") {
+if (materia == "ESC" || materia == "esc" || materia == "Esc") {
   alert("Gracias vuelva prontos");
 }
